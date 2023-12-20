@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="LOGIN"
+        android:textColor="#070707"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress"
+        android:textColor="#0C0C0C"
+        android:backgroundTint = "#0C0C0C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:textColor="#0C0C0C"
+        android:textColorHint="@color/black"
+        android:backgroundTint = "#0C0C0C"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_id" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/solid_button"
+        android:text="로그인"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#34CB8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <Button
+        android:id="@+id/btn_go_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/solid_button"
+        android:text="회원가입"
+        android:textSize="18sp"
+        app:backgroundTint="#208F62"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/password_finder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:text="비밀번호 찾기 >"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go_register" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

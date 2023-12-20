@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="413dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarl" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarl"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:background="#34CB8E"
+        android:foreground="#00FFFFFF"
+        android:gravity="center_horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/onButtonl"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:tint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/oniot_reverse" />
+
+    <Button
+        android:id="@+id/gaugeButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:text="gauge"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="411dp"
+        android:layout_height="384dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/dataButtonl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#FFFFFF"
+        android:text="Data"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
